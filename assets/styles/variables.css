@@ -1,0 +1,9 @@
+:root {
+	--primary-color: #3498db;
+	--secondary-color: #e2e2e2;
+	--spacing: 20px;
+
+	--font-size: 16px;
+	--line-height: 1.25;
+	--primary-font: 'roboto', sans-serif;
+}

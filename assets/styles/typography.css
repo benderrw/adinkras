@@ -1,0 +1,65 @@
+:root {
+	font-family: var(--primary-font);
+	font-weight: var(--weight-regular);
+	line-height: var(--line-height);
+
+	color-scheme: light dark;
+	background-color: #242424;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-size: var(--font-size);
+	line-height: inherit;
+	color: var(--secondary-color);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px dashed var(--primary-color);
+}
+a:hover {
+	opacity: 1;
+	border-bottom-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300;
+	font-size: 2em;
+	color: var(--primary-color);
+}
+
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+	margin-top: 35px;
+}
+
+h1 + *,
+h2 + *,
+h3 + *,
+h4 + *,
+h5 + *,
+h6 + * {
+	margin-top: var(--spacing);
+}
+
+p {
+	font-weight: normal;
+}
+* + p {
+	margin-top: var(--spacing);
+}
