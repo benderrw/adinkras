@@ -39,6 +39,7 @@ h6 {
 	font-size: 2em;
 	font-family: var(--title-font);
 	color: var(--primary-color);
+	text-transform: uppercase;
 }
 
 * + h1,

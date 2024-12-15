@@ -106,10 +106,6 @@
 	.piece-figure__secondary {
 		width: 50%;
 	}
-	.piece-figure__figure {
-		width: 100%;
-		margin: 0;
-	}
 }
 .piece-figure__reference,
 .piece-figure__name {
@@ -120,6 +116,12 @@
 	display: flex;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+	.piece-figure__figure {
+		width: 100%;
+		margin: 25px 0;
+	}
 }
 .piece-figure__figure svg {
 	height: 100%;
