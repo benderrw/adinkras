@@ -3,5 +3,6 @@
 @import './reset.min.css';
 @import './typography.css';
 @import './utils.css';
+@import './page.css';
 @import './modal.css';
 @import './mosaic.css';
