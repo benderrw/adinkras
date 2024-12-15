@@ -201,6 +201,7 @@
 	}
 	.piece-figure__primary {
 		flex-direction: column;
+		flex-grow: 1;
 	}
 	.piece-figure__name {
 		display: block;
