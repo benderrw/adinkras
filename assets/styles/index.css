@@ -3,4 +3,5 @@
 @import './reset.min.css';
 @import './typography.css';
 @import './utils.css';
-@import './puzzle.css';
+@import './modal.css';
+@import './mosaic.css';

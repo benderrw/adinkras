@@ -1,4 +1,7 @@
-@import '../fonts/roboto-light/fonts.css';
-@import '../fonts/roboto-regular/fonts.css';
-@import '../fonts/roboto-italic/fonts.css';
-@import '../fonts/roboto-bold/fonts.css';
+@import '../fonts/cormorant-garamond/cormorant-garamond-bold/styles.css';
+@import '../fonts/cormorant-garamond/cormorant-garamond-light/styles.css';
+@import '../fonts/cormorant-garamond/cormorant-garamond-regular/styles.css';
+
+@import '../fonts/poppins/poppins-bold/styles.css';
+@import '../fonts/poppins/poppins-light/styles.css';
+@import '../fonts/poppins/poppins-regular/styles.css';

@@ -5,5 +5,6 @@
 
 	--font-size: 16px;
 	--line-height: 1.25;
-	--primary-font: 'roboto', sans-serif;
+	--title-font: 'CormorantGaramond', sans-serif;
+	--text-font: 'Poppins', sans-serif;
 }

@@ -1,0 +1,315 @@
+.mosaic {
+	display: block;
+	overflow: hidden;
+}
+
+.mosaic-piece {
+	width: 150px;
+	margin: 10px;
+}
+
+.mosaic-piece-cta {
+	position: relative;
+	display: block;
+	width: 100%;
+	aspect-ratio: 1;
+	padding: 0;
+	border: none;
+	font-family: var(--text-font);
+	background-color: transparent;
+}
+
+.mosaic-piece-figure {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 20px;
+	box-sizing: border-box;
+	pointer-events: none;
+	flex-grow: 1;
+	height: auto;
+}
+
+.mosaic-piece-figure svg {
+	width: 100%;
+	height: 100%;
+}
+
+/* TIPOS */
+.lideranca-justica-e-moralidade {
+	background-color: #ed3237;
+}
+.sabedoria-conhecimento-e-estrategia {
+	background-color: #3e4095;
+}
+.fe-espiritualidade-e-resiliencia {
+	background-color: #c8a2cb;
+}
+.unidade-harmonia-e-relacoes {
+	background-color: #91d8f7;
+}
+.cultura-identidade-e-memoria {
+	background-color: #a8cf45;
+}
+.prosperidade-cuidado-e-saude {
+	background-color: #f5874f;
+}
+/* /TIPOS */
+
+.piece-details {
+	box-sizing: border-box;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+.piece-figure {
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 25px 40px;
+}
+@media (min-width: 768px) {
+	.piece-figure {
+		flex-direction: row;
+		height: auto;
+	}
+}
+.lideranca-justica-e-moralidade .piece-figure {
+	background-color: #ed3237;
+}
+.sabedoria-conhecimento-e-estrategia .piece-figure {
+	background-color: #3e4095;
+}
+.fe-espiritualidade-e-resiliencia .piece-figure {
+	background-color: #c8a2cb;
+}
+.unidade-harmonia-e-relacoes .piece-figure {
+	background-color: #91d8f7;
+}
+.cultura-identidade-e-memoria .piece-figure {
+	background-color: #a8cf45;
+}
+.prosperidade-cuidado-e-saude .piece-figure {
+	background-color: #f5874f;
+}
+.piece-figure__primary {
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.piece-figure__primary,
+	.piece-figure__secondary {
+		width: 50%;
+	}
+	.piece-figure__figure {
+		width: 100%;
+		margin: 0;
+	}
+}
+.piece-figure__reference,
+.piece-figure__name {
+	font-family: var(--title-font);
+}
+.piece-figure__figure {
+	flex: 1;
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.piece-figure__figure svg {
+	height: 100%;
+}
+.piece-figure__name {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.piece-figure__means {
+	margin-top: 15px;
+	font-size: 14px;
+	list-style: katakana inside;
+}
+.piece-figure__means li + li {
+	margin-top: 10px;
+}
+
+.mosaic-legend-cta[data-category='lideranca-justica-e-moralidade']:before {
+	background-color: #ed3237;
+}
+.mosaic-legend-cta[data-category='sabedoria-conhecimento-e-estrategia']:before {
+	background-color: #3e4095;
+}
+.mosaic-legend-cta[data-category='fe-espiritualidade-e-resiliencia']:before {
+	background-color: #c8a2cb;
+}
+.mosaic-legend-cta[data-category='unidade-harmonia-e-relacoes']:before {
+	background-color: #91d8f7;
+}
+.mosaic-legend-cta[data-category='cultura-identidade-e-memoria']:before {
+	background-color: #a8cf45;
+}
+.mosaic-legend-cta[data-category='prosperidade-cuidado-e-saude']:before {
+	background-color: #f5874f;
+}
+
+.piece-info {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 25px 40px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	overflow: auto;
+}
+.piece-info__title {
+	flex-shrink: 0;
+}
+.piece-info__data {
+	color: #111;
+	flex-basis: 1;
+	overflow-y: auto;
+}
+@media (min-width: 667px) {
+	.piece-details {
+		flex-direction: row;
+		align-items: stretch;
+		height: 70vh;
+	}
+	.piece-figure {
+		width: 35%;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.piece-info {
+		width: 65%;
+	}
+	.piece-figure__primary {
+		display: flex;
+	}
+	.piece-figure__primary,
+	.piece-figure__secondary {
+		width: 100%;
+	}
+	.piece-figure__primary {
+		flex-direction: column;
+	}
+	.piece-figure__name {
+		display: block;
+	}
+	.piece-figure__figure svg {
+		width: 100%;
+	}
+}
+
+@media (max-height: 700px) and (orientation: portrait) {
+	.piece-figure__secondary {
+		display: none;
+	}
+}
+@media (max-width: 700px) and (orientation: landscape) {
+	.piece-figure__secondary {
+		display: none;
+	}
+}
+
+@media (max-height: 620px) {
+	.piece-figure__secondary {
+		display: none;
+	}
+}
+
+.mosaic-legend {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--secondary-color);
+	border-top: 2px solid var(--primary-color);
+	color: #000;
+	font-family: var(--text-font);
+	font-size: 12px;
+}
+.mosaic-legend .wrapper {
+	padding: 15px 5px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.mosaic-legend .wrapper {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
+
+.mosaic-legend-cta {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background-color: transparent;
+	border: none;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+
+.mosaic-legend-cta:first-child {
+	grid-column: 1 / -1;
+}
+
+.mosaic-legend-cta > * {
+	pointer-events: none;
+	text-align: left;
+}
+
+.mosaic-legend-cta:before {
+	content: '';
+	display: block;
+	width: 15px;
+	height: 15px;
+	box-sizing: border-box;
+	border: 1px solid #000;
+	border-radius: 100%;
+	flex-shrink: 0;
+}
+
+.mosaic-legend-cta[data-category='all']:before {
+	background-color: #000;
+	font-weight: bold;
+}
+.mosaic-legend-cta[data-category='lideranca-justica-e-moralidade']:before {
+	background-color: #ed3237;
+}
+.mosaic-legend-cta[data-category='sabedoria-conhecimento-e-estrategia']:before {
+	background-color: #3e4095;
+}
+.mosaic-legend-cta[data-category='fe-espiritualidade-e-resiliencia']:before {
+	background-color: #c8a2cb;
+}
+.mosaic-legend-cta[data-category='unidade-harmonia-e-relacoes']:before {
+	background-color: #91d8f7;
+}
+.mosaic-legend-cta[data-category='cultura-identidade-e-memoria']:before {
+	background-color: #a8cf45;
+}
+.mosaic-legend-cta[data-category='prosperidade-cuidado-e-saude']:before {
+	background-color: #f5874f;
+}
+
+.piece-info__data dl {
+	padding-left: 25px;
+}
+.piece-meaning-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.3em;
+}
