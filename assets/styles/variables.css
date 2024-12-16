@@ -1,5 +1,5 @@
 :root {
-	--primary-color: #3498db;
+	--primary-color: #111;
 	--secondary-color: #e2e2e2;
 	--spacing: 20px;
 
@@ -9,9 +9,9 @@
 	--text-font: 'Poppins', sans-serif;
 
 	--mosaic-color--lideranca-justica-e-moralidade: #ed3237;
-	--mosaic-color--sabedoria-conhecimento-e-estrategia: #3e4095;
+	--mosaic-color--sabedoria-conhecimento-e-estrategia: #ffe100;
 	--mosaic-color--fe-espiritualidade-e-resiliencia: #c8a2cb;
 	--mosaic-color--unidade-harmonia-e-relacoes: #91d8f7;
-	--mosaic-color--cultura-identidade-e-memoria: #a8cf45;
-	--mosaic-color--prosperidade-cuidado-e-saude: #f5874f;
+	--mosaic-color--cultura-identidade-e-memoria: #f5874f;
+	--mosaic-color--prosperidade-cuidado-e-saude: #a8cf45;
 }

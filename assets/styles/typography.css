@@ -37,6 +37,7 @@ h5,
 h6 {
 	font-weight: bold;
 	font-size: 2em;
+	line-height: 1.1;
 	font-family: var(--title-font);
 	color: var(--primary-color);
 	text-transform: uppercase;
@@ -78,17 +79,23 @@ dt {
 dd + dt {
 	margin-top: 20px;
 }
+dd + dd {
+	margin-top: 15px;
+}
 
-h1 {
-	text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan;
+h1,
+h2 {
+	/* text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan; */
 	color: white;
 	text-align: center;
 }
-
-h1 > span {
-	display: block;
-}
-h1 > span:nth-child(2) {
-	font-size: 0.5em;
+.subtitle {
+	text-shadow: 0 0 10px cyan, 0 0 10px cyan;
+	color: white;
+	font-size: 1.7em;
 	margin-top: 5px;
+}
+
+.section .subtitle {
+	text-align: center;
 }
