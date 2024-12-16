@@ -308,9 +308,12 @@
 }
 
 .mosaic-scroll-to-view__info {
-	font-size: 10px;
+	font-size: 14px;
 	color: var(--secondary-color);
 	margin-bottom: 18px;
+	font-family: 'InkFree';
+	display: flex;
+	flex-direction: column;
 }
 
 .mosaic-scroll-to-view__cta {
