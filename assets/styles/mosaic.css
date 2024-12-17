@@ -15,9 +15,14 @@
 }
 
 .mosaic-piece {
-	width: 150px;
+	width: 100px;
 	margin: 10px;
 	background-color: #000;
+}
+@media (min-width: 768px) {
+	.mosaic-piece {
+		width: 150px;
+	}
 }
 
 .mosaic-piece-cta {
@@ -56,7 +61,31 @@
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	box-shadow: 0 0 7px -1px cyan;
+	/* box-shadow: 0 0 7px -1px cyan; */
+}
+.lideranca-justica-e-moralidade .piece-details,
+.lideranca-justica-e-moralidade .modal-button-close {
+	box-shadow: 0 0 7px -1px var(--mosaic-color--lideranca-justica-e-moralidade);
+}
+.sabedoria-conhecimento-e-estrategia .piece-details,
+.sabedoria-conhecimento-e-estrategia .modal-button-close {
+	box-shadow: 0 0 7px -1px var(--mosaic-color--sabedoria-conhecimento-e-estrategia);
+}
+.fe-espiritualidade-e-resiliencia .piece-details,
+.fe-espiritualidade-e-resiliencia .modal-button-close {
+	box-shadow: 0 0 7px -1px var(--mosaic-color--fe-espiritualidade-e-resiliencia);
+}
+.unidade-harmonia-e-relacoes .piece-details,
+.unidade-harmonia-e-relacoes .modal-button-close {
+	box-shadow: 0 0 7px -1px var(--mosaic-color--unidade-harmonia-e-relacoes);
+}
+.cultura-identidade-e-memoria .piece-details,
+.cultura-identidade-e-memoria .modal-button-close {
+	box-shadow: 0 0 7px -1px var(--mosaic-color--cultura-identidade-e-memoria);
+}
+.prosperidade-cuidado-e-saude .piece-details,
+.prosperidade-cuidado-e-saude .modal-button-close {
+	box-shadow: 0 0 7px -1px var(--mosaic-color--prosperidade-cuidado-e-saude);
 }
 .piece-figure {
 	flex-shrink: 0;
@@ -164,6 +193,7 @@
 	flex-direction: column;
 	flex-grow: 1;
 	overflow: auto;
+	text-align: center;
 }
 .piece-info__title {
 	flex-shrink: 0;
@@ -173,6 +203,7 @@
 	flex-basis: 1;
 	overflow-y: auto;
 }
+
 @media (min-width: 667px) {
 	.piece-details {
 		flex-direction: row;
@@ -254,7 +285,7 @@
 	justify-content: center;
 	align-items: center;
 	border: none;
-	font-family: 'InkFree';
+	font-family: var(--text-font);
 	font-size: 16px;
 	background-color: transparent;
 	padding: 5px 0;
