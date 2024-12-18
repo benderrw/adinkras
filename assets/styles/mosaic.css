@@ -165,22 +165,22 @@
 	display: inline;
 }
 
-.mosaic-filter-cta[data-category='lideranca-justica-e-moralidade']:before {
+.mosaic-filter-button[data-category='lideranca-justica-e-moralidade']:before {
 	background-color: #ed3237;
 }
-.mosaic-filter-cta[data-category='sabedoria-conhecimento-e-estrategia']:before {
+.mosaic-filter-button[data-category='sabedoria-conhecimento-e-estrategia']:before {
 	background-color: #3e4095;
 }
-.mosaic-filter-cta[data-category='fe-espiritualidade-e-resiliencia']:before {
+.mosaic-filter-button[data-category='fe-espiritualidade-e-resiliencia']:before {
 	background-color: #c8a2cb;
 }
-.mosaic-filter-cta[data-category='unidade-harmonia-e-relacoes']:before {
+.mosaic-filter-button[data-category='unidade-harmonia-e-relacoes']:before {
 	background-color: #91d8f7;
 }
-.mosaic-filter-cta[data-category='cultura-identidade-e-memoria']:before {
+.mosaic-filter-button[data-category='cultura-identidade-e-memoria']:before {
 	background-color: #a8cf45;
 }
-.mosaic-filter-cta[data-category='prosperidade-cuidado-e-saude']:before {
+.mosaic-filter-button[data-category='prosperidade-cuidado-e-saude']:before {
 	background-color: #f5874f;
 }
 
@@ -259,12 +259,29 @@
 }
 
 .mosaic-filter {
-	color: #000;
-	font-family: 'InkFree';
-	font-size: 12px;
 	margin-top: 35px;
-	border-top: 1px solid white;
-	border-bottom: 1px solid white;
+	position: relative;
+}
+
+@media (min-width: 768px) {
+	.mosaic-filter .wrapper {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
+.filter-icon-label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(-50%);
+	padding: 5px 13px;
+	background-color: var(--background-color);
+	border: 1px outset var(--secondary-color);
+	border-radius: 19px;
+	font-size: 14px;
+}
+.mosaic-filter-buttons {
+	border-top: 1px solid var(--secondary-color);
+	border-bottom: 1px solid var(--secondary-color);
 
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -273,14 +290,7 @@
 	align-items: center;
 	box-sizing: border-box;
 }
-
-@media (min-width: 768px) {
-	.mosaic-filter .wrapper {
-		grid-template-columns: repeat(6, 1fr);
-	}
-}
-
-.mosaic-filter-cta {
+.mosaic-filter-buttons button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -288,35 +298,42 @@
 	font-family: var(--text-font);
 	font-size: 16px;
 	background-color: transparent;
-	padding: 5px 0;
+	padding: 10px 0;
+	line-height: 1.3;
 	text-align: center;
+	letter-spacing: 0.4px;
+	color: #000;
+	font-family: var(--text-font);
+	font-size: 12px;
 }
 
-.mosaic-filter-cta:first-child {
+.mosaic-filter-buttons button:first-child {
 	grid-column: 1 / -1;
 	color: var(--secondary-color);
 	border-bottom: 1px solid white;
 }
-.mosaic-filter-cta[data-category='lideranca-justica-e-moralidade'] {
+.mosaic-filter-buttons button[data-category='lideranca-justica-e-moralidade'] {
 	color: var(--mosaic-color--lideranca-justica-e-moralidade);
 }
-.mosaic-filter-cta[data-category='sabedoria-conhecimento-e-estrategia'] {
+.mosaic-filter-buttons
+	button[data-category='sabedoria-conhecimento-e-estrategia'] {
 	color: var(--mosaic-color--sabedoria-conhecimento-e-estrategia);
 }
-.mosaic-filter-cta[data-category='fe-espiritualidade-e-resiliencia'] {
+.mosaic-filter-buttons
+	button[data-category='fe-espiritualidade-e-resiliencia'] {
 	color: var(--mosaic-color--fe-espiritualidade-e-resiliencia);
 }
-.mosaic-filter-cta[data-category='unidade-harmonia-e-relacoes'] {
+.mosaic-filter-buttons button[data-category='unidade-harmonia-e-relacoes'] {
 	color: var(--mosaic-color--unidade-harmonia-e-relacoes);
 }
-.mosaic-filter-cta[data-category='cultura-identidade-e-memoria'] {
+.mosaic-filter-buttons button[data-category='cultura-identidade-e-memoria'] {
 	color: var(--mosaic-color--cultura-identidade-e-memoria);
 }
-.mosaic-filter-cta[data-category='prosperidade-cuidado-e-saude'] {
+.mosaic-filter-buttons button[data-category='prosperidade-cuidado-e-saude'] {
 	color: var(--mosaic-color--prosperidade-cuidado-e-saude);
 }
 
-.mosaic-filter-cta > * {
+.mosaic-filter-buttons button > * {
 	pointer-events: none;
 }
 

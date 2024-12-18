@@ -884,9 +884,10 @@
 					href="https://www.instagram.com/inkmayim/"
 					target="_blank"
 				>
-					<svg>
-						<use xlink:href="#instagram-logo"></use>
-					</svg>
+					<img
+						src="/assets/svgs/instagram.svg"
+						alt="Imagem referente a logo do Instagram"
+					/>
 				</a>
 			</div>
 
@@ -911,45 +912,30 @@
 					</div>
 
 					<div class="mosaic-filter">
-						<button class="mosaic-filter-cta" data-category="*">
-							<div>Todos</div>
-						</button>
-						<button
-							class="mosaic-filter-cta"
-							data-category="lideranca-justica-e-moralidade"
-						>
-							<div>Liderança, Justiça e Moralidade</div>
-						</button>
-						<button
-							class="mosaic-filter-cta"
-							data-category="sabedoria-conhecimento-e-estrategia"
-						>
-							<div>Sabedoria, Conhecimento e Estratégia</div>
-						</button>
-						<button
-							class="mosaic-filter-cta"
-							data-category="fe-espiritualidade-e-resiliencia"
-						>
-							<div>Fé, Espiritualidade e Resiliência</div>
-						</button>
-						<button
-							class="mosaic-filter-cta"
-							data-category="unidade-harmonia-e-relacoes"
-						>
-							<div>Unidade, Harmonia e Relações</div>
-						</button>
-						<button
-							class="mosaic-filter-cta"
-							data-category="cultura-identidade-e-memoria"
-						>
-							<div>Cultura, Identidade e Memória</div>
-						</button>
-						<button
-							class="mosaic-filter-cta"
-							data-category="prosperidade-cuidado-e-saude"
-						>
-							<div>Prosperidade, Cuidado e Saúde</div>
-						</button>
+						<div class="filter-icon-label">Filtro:</div>
+						<div class="mosaic-filter-buttons">
+							<button data-category="*">
+								<div>Todos</div>
+							</button>
+							<button data-category="lideranca-justica-e-moralidade">
+								<div>Liderança, Justiça e Moralidade</div>
+							</button>
+							<button data-category="sabedoria-conhecimento-e-estrategia">
+								<div>Sabedoria, Conhecimento e Estratégia</div>
+							</button>
+							<button data-category="fe-espiritualidade-e-resiliencia">
+								<div>Fé, Espiritualidade e Resiliência</div>
+							</button>
+							<button data-category="unidade-harmonia-e-relacoes">
+								<div>Unidade, Harmonia e Relações</div>
+							</button>
+							<button data-category="cultura-identidade-e-memoria">
+								<div>Cultura, Identidade e Memória</div>
+							</button>
+							<button data-category="prosperidade-cuidado-e-saude">
+								<div>Prosperidade, Cuidado e Saúde</div>
+							</button>
+						</div>
 					</div>
 				</div>
 				<div class="wrapper wrapper-mosaic">
@@ -3668,7 +3654,9 @@
 				sortBy: 'random'
 			})
 
-			const legendCTAs = document.querySelectorAll('.mosaic-filter-cta')
+			const legendCTAs = document.querySelectorAll(
+				'.mosaic-filter-buttons button'
+			)
 			legendCTAs.forEach((legendCTA) => {
 				legendCTA.addEventListener('click', (thisButton) => {
 					const filterValue = thisButton.target.getAttribute('data-category')

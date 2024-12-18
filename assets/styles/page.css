@@ -27,6 +27,7 @@
 	text-decoration: none;
 	border: none;
 	position: relative;
+	transform: translateX(-6%);
 }
 
 .logo-link .inkmayim-logo {
@@ -80,6 +81,10 @@
 }
 .history-adinkras dt + dd {
 	margin-top: 15px;
+}
+
+.history-adinkras dd + dt {
+	margin-top: 50px;
 }
 section#about-adinkras {
 	margin-top: -30px;

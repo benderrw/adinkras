@@ -4,7 +4,7 @@
 	line-height: var(--line-height);
 
 	color-scheme: light dark;
-	background-color: #242424;
+	background-color: var(--background-color);
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -27,6 +27,11 @@ a {
 a:hover {
 	opacity: 1;
 	border-bottom-color: transparent;
+}
+a:focus,
+a:visited {
+	border: none;
+	outline: none;
 }
 
 h1,

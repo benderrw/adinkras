@@ -1,10 +1,12 @@
 :root {
 	--primary-color: #111;
 	--secondary-color: #e2e2e2;
-	--spacing: 20px;
+	--background-color: #242424;
 
+	--spacing: 20px;
 	--font-size: 16px;
 	--line-height: 1.25;
+
 	--title-font: 'CormorantGaramond', sans-serif;
 	--text-font: 'Poppins', sans-serif;
 
