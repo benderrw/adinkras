@@ -14,9 +14,26 @@
 
 body {
 	font-family: var(--text-font);
-	font-size: var(--font-size);
+	font-size: 16px;
 	line-height: inherit;
 	color: var(--secondary-color);
+}
+
+@media (min-width: 480px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+}
+@media (min-width: 1024px) {
+	body {
+		font-size: 16px;
+	}
 }
 
 a {
@@ -41,7 +58,7 @@ h4,
 h5,
 h6 {
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 2rem;
 	line-height: 1.1;
 	font-family: var(--title-font);
 	color: var(--primary-color);

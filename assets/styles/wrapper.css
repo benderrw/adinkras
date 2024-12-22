@@ -1,33 +1,31 @@
 .wrapper {
+	box-sizing: border-box;
 	width: 100%;
-	margin: 0 auto;
 	padding-left: 30px;
 	padding-right: 30px;
-	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+	.wrapper {
+	}
 }
 
 @media (min-width: 768px) {
 	.wrapper {
+		width: 60%;
 		padding-left: 0;
 		padding-right: 0;
 	}
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 1024px) {
 	.wrapper {
 		width: 60%;
 	}
 }
 
-/* Estilo para dispositivos de largura entre 992px e 1199px (tablets em modo retrato e desktops pequenos) */
-@media (min-width: 992px) and (max-width: 1199px) {
-	.wrapper {
-		width: 60%;
-	}
-}
-
-/* Estilo para dispositivos de largura igual ou superior a 1200px (desktops grandes) */
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
 	.wrapper {
 		width: 60%;
 	}
